@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="myNameOne"
+            type="com.example.bait2073_practical_week_3.MyName" />
+    </data>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,13 +24,14 @@
             style="@style/nameStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/nameTextView" />
+            android:text="@={myNameOne.name}" />
 
         <TextView
             android:id="@+id/nickNameTextView"
             style="@style/nameStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@={myNameOne.nickname}"
             android:visibility="gone" />
 
         <EditText
@@ -39,5 +48,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/confirmButton" />
+
+        <Button
+            android:id="@+id/callButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/callButton" />
     </LinearLayout>
 </layout>

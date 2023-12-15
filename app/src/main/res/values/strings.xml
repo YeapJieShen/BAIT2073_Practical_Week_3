@@ -3,4 +3,5 @@
     <string name="nameTextView">Jie Shen</string>
     <string name="nickNameHint">Type your name here !</string>
     <string name="confirmButton">Confirm</string>
+    <string name="callButton">Call Me</string>
 </resources>
